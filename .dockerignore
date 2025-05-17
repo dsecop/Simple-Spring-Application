@@ -1,0 +1,68 @@
+# Pliki i katalogi Gradle
+.gradle/
+build/
+!build/libs/*.jar
+
+# Pliki IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.settings/
+.project
+.classpath
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+
+# Pliki git
+.git/
+.gitignore
+
+# Pliki konfiguracyjne i dokumentacja
+README.md
+HELP.md
+*.log
+logs/
+
+# Pliki testów
+src/test/
+**/test/
+**/tests/
+
+# Inne
+.env
+.env.*
+*.pid
+temp/
+tmp/
+
+# Gradle wrapper - potrzebne do budowania
+!gradle/
+!gradlew
+!gradlew.bat
+
+# Pliki konfiguracyjne CI/CD
+.github/
+.gitlab-ci.yml
+
+# Pliki narzędzi developerskich
+.pre-commit-config.yaml
+commitlint.config.js
+
+# Pliki baz danych
+*.db
+*.mv.db
+*.trace.db
+
+# Pliki raportów i pokrycia kodu
+reports/
+coverage/
+jacoco/
+
+# Pliki cache
+.gradle/
+.npm/
+.yarn/
+node_modules/
