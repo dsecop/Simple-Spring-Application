@@ -12,7 +12,7 @@ FROM eclipse-temurin:17-jre-alpine-3.21 AS runtime
 WORKDIR /app
 
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup && \
-    rm -rf /var/cache/apk/* \
+    rm -rf /var/cache/apk/*
 
 COPY --from=build /app/build/libs/*.jar app.jar
 
