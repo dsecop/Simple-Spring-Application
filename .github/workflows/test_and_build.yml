@@ -29,8 +29,9 @@ jobs:
         run: ./gradlew test --stacktrace
 
   build_and_push:
+    needs: test
     runs-on: ubuntu-22.04
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: needs.test.result == 'success' && github.event_name == 'push' && github.ref == 'refs/heads/main'
 
     steps:
       - name: Checkout code
